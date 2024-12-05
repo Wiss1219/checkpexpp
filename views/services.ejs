@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services</title>
+  <link rel="stylesheet" href="/serstyles.css">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+<body>
+  <!-- Particle background container -->
+  <div id="particles-js"></div>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="/">Home</a>
+    <a href="/services">Our Services</a>
+    <a href="/contact">Contact Us</a>
+  </div>
+  
+  <!-- Content Section -->
+  <div class="content">
+    <h1>Our Services</h1>
+    <p>We offer a variety of services to meet your needs. Here are some of our specialties:</p>
+    <ul>
+      <li><strong>Web Development</strong> — Creating beautiful and functional websites.</li>
+      <li><strong>SEO Optimization</strong> — Improve your website's visibility on search engines.</li>
+      <li><strong>Consulting</strong> — Get expert advice for your business or technical challenges.</li>
+      <li><strong>Digital Marketing</strong> — Grow your online presence and brand awareness.</li>
+    </ul>
+  </div>
+
+  <script>
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        shape: { type: 'circle' },
+        opacity: { value: 0.5, random: true, anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false } },
+        size: { value: 3, random: true, anim: { enable: true, speed: 4, size_min: 0.1, sync: false } },
+        move: { enable: true, speed: 6, direction: 'none', random: true, out_mode: 'out' }
+      },
+      interactivity: {
+        detect_on: 'window',
+        events: {
+          onhover: { enable: true, mode: 'repulse' },
+          onclick: { enable: true, mode: 'push' }
+        },
+        modes: { repulse: { distance: 100, duration: 0.4 }, push: { particles_nb: 4 } }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
+</html>

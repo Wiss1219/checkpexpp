@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="/cstyles.css">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+<body>
+  <!-- Particle background container -->
+  <div id="particles-js"></div>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="/">Home</a>
+    <a href="/services">Our Services</a>
+    <a href="/contact">Contact Us</a>
+  </div>
+  
+  <!-- Content Section -->
+  <div class="content">
+    <h1>Contact Us</h1>
+    <p>If you have any questions or need assistance, feel free to reach out to us:</p>
+    
+    <form action="mailto:example@example.com" method="post" enctype="text/plain">
+      <div>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+      </div>
+      <div>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+      </div>
+      <div>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <script>
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        shape: { type: 'circle' },
+        opacity: { value: 0.5, random: true, anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false } },
+        size: { value: 3, random: true, anim: { enable: true, speed: 4, size_min: 0.1, sync: false } },
+        move: { enable: true, speed: 6, direction: 'none', random: true, out_mode: 'out' }
+      },
+      interactivity: {
+        detect_on: 'window',
+        events: {
+          onhover: { enable: true, mode: 'repulse' },
+          onclick: { enable: true, mode: 'push' }
+        },
+        modes: { repulse: { distance: 100, duration: 0.4 }, push: { particles_nb: 4 } }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
+</html>
